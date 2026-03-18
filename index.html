@@ -23,17 +23,34 @@ body {
     font-size: 20px;
     text-shadow: 0 0 5px red;
 }
+
+/* 👇ここが強化されたボタン */
 button {
     background: black;
     color: white;
-    border: 1px solid red;
-    padding: 10px;
-    margin: 5px 0;
+    border: 2px solid red;
+    padding: 20px;
+    margin: 10px 0;
     cursor: pointer;
+
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    border-radius: 8px;
+    transition: all 0.2s ease;
 }
+
 button:hover {
     background: red;
+    color: black;
+    transform: scale(1.03);
 }
+
+button:active {
+    transform: scale(0.97);
+}
+
 #jumpscare {
     position: fixed;
     width: 100%;
